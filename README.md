@@ -209,9 +209,7 @@ Cliquer sur créer des identifiants Id Client Auth
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/google cloud console2.png" width="1000" height="300"/></a>
 <br>
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/playlist_youtube.gif" width="1000" height="300"/></a>
-    Une fois la connexion via Google configuré logger vous sur votre Interface Admin afin de synchroniser votre compte avec YouTube
-    et ensuite accédez à la page https://votre_heroku_app.herokuapp.com/listplaylist?pseudo=votre_nom_d_utilisateur
-    Voici l'exemple de ma page playlist automatiquement généré une fois loggé sur mon espace administrateur et la connexion établi via YouTube Api V3 ==> https://platform-media.herokuapp.com/listplaylist?pseudo=vertingo
+ 
 </p>
 
 Origines JavaScript autorisées:
@@ -221,11 +219,13 @@ Et URI de redirection autorisés:
 - http://votre_heroku_app.herokuapp.com/admin/dashboard/
 - http://localhost/easyadmin-master/web/app_dev.php/admin/dashboard/
 
-
 Une fois la clé créé copier coller cette clé puis renseigné la dans web/youtube:
 - auth.js ligne 5
 - analytics_codelab.js ligne 4
 
+ Une fois la connexion via Google configuré logger vous sur votre Interface Admin afin de synchroniser votre compte avec YouTube
+ et ensuite accédez à la page ==> https://votre_heroku_app.herokuapp.com/listplaylist?pseudo=votre_nom_d_utilisateur
+ Voici l'exemple de ma page playlist automatiquement généré une fois loggé sur mon espace administrateur et la connexion établi via    YouTube Api V3 ==> https://platform-media.herokuapp.com/listplaylist?pseudo=vertingo
 
 Symfony starter project using:
 
