@@ -184,11 +184,17 @@ git add .
 git commit -am "make it better"
 
 git push heroku master
+```
 
+<p align="center">
+<a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/deploiement.gif" width="1000" height="300"/></a>
+<br>
+</p>
 
 Une fois déployé sur le serveur heroku:
 Il faut recréer la base donnée en se connectant à distance sur le terminal du serveur:
 
+```
 heroku run bash
 
 php bin/console doctrine:schema:create  (Création des tables dans la base de donnée easy_admin)
