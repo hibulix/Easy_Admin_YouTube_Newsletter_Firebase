@@ -212,6 +212,7 @@ Cliquer sur créer des identifiants Id Client Auth
 
 Origines JavaScript autorisées:
 - http://platform-media.herokuapp.com
+
 Et URI de redirection autorisés:
 - http://platform-media.herokuapp.com/admin/dashboard/
 - http://localhost/easyadmin-master/web/app_dev.php/admin/dashboard/
