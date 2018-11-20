@@ -71,7 +71,7 @@ Api YouTube + FireBase(Push Notification) + NewsLetters + File Manager
 
 
 Prérequis:
-*Gestionnaire de commande composer with xampp! ==> https://www.youtube.com/watch?v=v7uCji-WhjY
+- *Gestionnaire de commande composer with xampp! ==> https://www.youtube.com/watch?v=v7uCji-WhjY
 
 Une fois xampp installé il faut lancer le serveur apache et mysql illustré ci-dessous:
 Assurer vous que les références à votre base de donnée sont bien renseignés dans 
@@ -159,9 +159,9 @@ l'ajout de l'extension postgre effectué:
 
 Commande de Déploiement:
 Prérequis:
-*Gestionnaire de commande git!
-*Gestionnaire de commande composer!
-*Gestionnaire de commande heroku!
+- *Gestionnaire de commande git!
+- *Gestionnaire de commande composer!
+- *Gestionnaire de commande heroku!
 
 Créer un projet sur Heroku, installer le gestionnaire de commande Heroku en local et taper les commandes suivantes:
 
@@ -208,16 +208,16 @@ Cliquer sur créer des identifiants Id Client Auth
 <br>
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/google cloud console2.png" width="1000" height="300"/></a>
 <br>
-Origines JavaScript autorisées:<br>
-http://platform-media.herokuapp.com
-Et URI de redirection autorisés:<br>
-http://platform-media.herokuapp.com/admin/dashboard/<br>
-http://localhost/easyadmin-master/web/app_dev.php/admin/dashboard/<br>
+Origines JavaScript autorisées:
+- http://platform-media.herokuapp.com
+Et URI de redirection autorisés:
+- http://platform-media.herokuapp.com/admin/dashboard/
+- http://localhost/easyadmin-master/web/app_dev.php/admin/dashboard/
 </p>
 
 Une fois la clé créé copier coller cette clé puis renseigné la dans web/youtube:
-auth.js ligne 5
-analytics_codelab.js ligne 4
+- auth.js ligne 5
+- analytics_codelab.js ligne 4
 
 
 Symfony starter project using:
