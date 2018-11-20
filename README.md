@@ -88,7 +88,7 @@ Cliquer sur admin pour accéder à l'interface phpMyAdmin:
 <br>
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/phpmyadmin.png" width="1000" height="300"/></a>
 <br>
-Une fois vos bases de données recréés elles seront accesibles dans PhpMyAdmin!<br>
+Une fois vos bases de données recréés elles seront accessibles dans PhpMyAdmin!<br>
 Pour les recréer voir les commandes ci-dessous:
 </p>
 
@@ -124,7 +124,7 @@ Ajout d'un fichier procfile avec le contenu suivant spécifique pour les applica
 
 web: vendor/bin/heroku-php-apache2 web/
 
-Ajouter une extension postgre pour la persistence des données:
+Ajouter une extension postgre pour la persistance des données:
 <p align="center">
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/postgre.png" width="1000" height="300"/></a>
 <br>
@@ -141,7 +141,7 @@ Cliquer sur view credentials:
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/postgre4.png" width="1000" height="300"/></a>
 <br>
 Les différents champs doivent être ajouter dans le parameters.yml et parameters.yml.dist dans app/config dans les variables d'environnements prod donc database_host_prod. Pour database_host_mandanta et b il faut ajouter une fois de plus la même 
-extension postgre! Il faut également préciser la variable d'environement database url dans composer.json disponible une fois 
+extension postgre! Il faut également préciser la variable d'environnement database url dans composer.json disponible une fois 
 l'ajout de l'extension postgre effectué:
 </p>
 
@@ -163,7 +163,7 @@ Prérequis:
 *Gestionnaire de commande composer!
 *Gestionnaire de commande heroku!
 
-Créer un projet sur heroku, installer le gestionnaire de commande Heroku en local et taper les commandes suivantes:
+Créer un projet sur Heroku, installer le gestionnaire de commande Heroku en local et taper les commandes suivantes:
 
 ```
 heroku login
