@@ -67,7 +67,7 @@ Api YouTube + FireBase(Push Notification) + NewsLetters + File Manager
 </p>
 
 
-#### Installation Localy with Xampp
+#### Installation Localement avec Xampp
 
 
 Prérequis:
