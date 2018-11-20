@@ -76,8 +76,8 @@ Prérequis:
 Une fois xampp installé il faut lancer le serveur apache et mysql illustré ci-dessous:
 Assurer vous que les références à votre base de donnée sont bien renseignés dans 
 parameters.yml.dist et parameters.yml . A priori les valeurs sont déjà correct pour 
-l'environnement de prod! A noter qu'il faut bien distinguer config_dev.yml et 
-config_prod.yml qui comme son nom l'indique sont deux fichiers fichiers de config 
+l'environnement de dev! A noter qu'il faut bien distinguer config_dev.yml et 
+config_prod.yml qui comme son nom l'indique sont deux fichiers de config 
 propre à leur environnement dans lequelle l'application évolue! Soit local pour 
 config_dev.yml et en ligne config_prod.yml!
 
