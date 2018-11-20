@@ -1,0 +1,56 @@
+listplaylist:
+    path:     /listplaylist
+    defaults: { _controller: VideoPlayerBundle:VideoPlayer:listplaylist }
+    options:
+        sitemap:
+            priority: 0.5
+            changefreq: weekly
+
+imagesvideos:
+    path:     /imagesvideos
+    defaults: { _controller: VideoPlayerBundle:VideoPlayer:imagesvideos }
+    options:
+        sitemap:
+            priority: 0.5
+            changefreq: weekly
+
+infosblock:
+    path:     /infosblock
+    defaults: { _controller: VideoPlayerBundle:VideoPlayer:infosblock }
+    options:
+        sitemap:
+            priority: 0.5
+            changefreq: weekly
+
+intro:
+    path:     /intro
+    defaults: { _controller: VideoPlayerBundle:VideoPlayer:intro }
+    options:
+        sitemap:
+            priority: 0.5
+            changefreq: weekly
+
+sliders:
+    path:     /sliders
+    defaults: { _controller: VideoPlayerBundle:VideoPlayer:sliders }
+    options:
+        sitemap:
+            priority: 0.5
+            changefreq: weekly
+
+socialblocks:
+    path:     /socialblocks
+    defaults: { _controller: VideoPlayerBundle:VideoPlayer:socialblocks }
+    options:
+        sitemap:
+            priority: 0.5
+            changefreq: weekly
+            
+
+testimonials:
+    path:     /testimonials
+    defaults: { _controller: VideoPlayerBundle:VideoPlayer:testimonials }
+    options:
+        sitemap:
+            priority: 0.5
+            changefreq: weekly

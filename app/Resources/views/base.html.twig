@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html{{ sonata_seo_html_attributes() }}>
+    <head {{ sonata_seo_head_attributes() }}>
+        {{ sonata_seo_title() }}
+        {{ sonata_seo_metadatas() }}
+        {{ sonata_seo_link_canonical() }}
+        {{ sonata_seo_lang_alternates() }}
+
+    <meta name="generator" content="Mobirise v4.2.3, mobirise.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    {% block stylesheets %}
+        {% include '@ArkounayBlockI18n/assets/include_css.html.twig' %}
+    {% endblock %}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" /> 
+    <link rel="shortcut icon" href="assets/images/logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="{{ asset('assets/web/assets/mobirise-icons/mobirise-icons.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/tether/tether.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/bootstrap/css/bootstrap-grid.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/bootstrap/css/bootstrap-reboot.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/socicon/css/styles.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/dropdown/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/theme/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/mobirise/css/mbr-additional.css') }}" type="text/css">
+    <link rel="alternate" type="application/rss+xml" title="Actus du développement web (RSS)" href="http://platform-media.herokuapp.com/flux_rss_vertin_go_prod" />
+</head>
+<body>
+{% block body %}{% endblock %}
+{% block javascripts %}
+    {% if has_inline_edit_permissions() %}
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/4.4.3/tinymce.min.js"></script>
+        <script type="text/javascript" src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+         google_ad_client: "ca-pub-9581753365998608",
+         enable_page_level_ads: true
+        });
+        </script>
+    {% endif %}
+    {% include '@ArkounayBlockI18n/assets/include_js.html.twig' %}
+    {% include '@SonataSeo/Block/_facebook_sdk.html.twig' %}
+    {% include '@SonataSeo/Block/_twitter_sdk.html.twig' %}
+    {% include '@SonataSeo/Block/_pinterest_sdk.html.twig' %}
+{% endblock %}
+</body>
+</html>
