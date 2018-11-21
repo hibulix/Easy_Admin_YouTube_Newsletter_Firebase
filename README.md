@@ -239,6 +239,20 @@ Une fois la clé créé copier coller cette clé puis renseigné la dans web/you
 <p align="center">
 Ci-dessous la page Playlist Youtube généré une fois synchronisé avec YouTube!
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/playlist_youtube.gif" width="1000" height="300"/></a>
+   
+</p>
+
+
+#### Synchroniser avec l'application mobile
+- Synchronisation des fichiers uploads sur le File Manager.
+- Synchronisation des vidéos et playlist de votre chaîne YouTube.
+- Synchronisation avec Google Cloud Messaging pour réception de notification push.
+
+<center>Ci-dessous illustration de la synchronisation avec l'application mobile TopsiteApp et réception de notification push!</center>
+<p align="center">
+<a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/topsiteapp_demo.gif" width="1000" height="300"/></a>
+<br>
+<a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/Disponible-sur-App-Store-Logo.jpg" width="1000" height="300"/></a>
 </p>
 
 Symfony starter project using:
