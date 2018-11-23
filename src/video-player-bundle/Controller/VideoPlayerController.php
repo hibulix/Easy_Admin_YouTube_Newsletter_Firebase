@@ -167,6 +167,16 @@ class VideoPlayerController extends Controller
             
         ));
     }
+	
+	
+    public function myownvertingowebsiteAction()
+    {
+
+
+        return $this->render('VideoPlayerBundle:VideoPlayer:myownvertingowebsite.html.twig', array(
+            
+        ));
+    }
 
 
     public function testimonialsAction()
