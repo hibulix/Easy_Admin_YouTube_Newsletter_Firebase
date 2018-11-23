@@ -130,9 +130,12 @@ Request::setTrustedHeaderName(Request::HEADER_CLIENT_HOST, null);
 Ajout d'un fichier procfile avec le contenu suivant spécifique pour les applications symfony dans le dossier web:
 
 web: vendor/bin/heroku-php-apache2 web/
+<p align="center">    
+Créer une application et récupérer le gestionnaire de commande heroku-cli:
+<a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/heroku-cli.gif" width="1000" height="300"/></a>
+<br>
 
 Ajouter une extension postgre pour la persistance des données:
-<p align="center">
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/postgre.png" width="1000" height="300"/></a>
 <br>
 Cliquer sur votre extension dans le sous menu du champs recherche:
