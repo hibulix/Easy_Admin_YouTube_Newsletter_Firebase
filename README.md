@@ -19,7 +19,6 @@ Back end: Api YouTube + FireBase(Push Notification) + NewsLetters + File Manager
 <br>
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/file_carousel.gif" width="1000" height="400"/></a>
 <br>
-    
 #### Ci-dessus tous vos fichiers upload sur le file manager regroupés sous forme de carousel automatique!    
 <br>   
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/front4.png" width="1000" height="400"/></a>
@@ -56,10 +55,8 @@ Back end: Api YouTube + FireBase(Push Notification) + NewsLetters + File Manager
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/playlist_youtube.gif" width="1000" height="300"/></a>
 </p>
 <br>
-
-
-<center>Back-End</center>
 <p align="center">
+Back-End
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/admin.png" width="1000" height="300"/></a>
 <br>
 ================================================================================
@@ -110,9 +107,7 @@ Back end: Api YouTube + FireBase(Push Notification) + NewsLetters + File Manager
 <br>
 </p>
 
-
 #### Installation Localement avec Xampp
-
 
 Prérequis:
 - *Gestionnaire de commande composer with xampp! ==> https://www.youtube.com/watch?v=v7uCji-WhjY
@@ -150,12 +145,9 @@ php bin/console fos:user:promote user ROLE_ADMIN (Afin de vous logger sur l'inte
 Page de login de l'admin interface ==> http://localhost/easyadmin-master/web/app_dev.php/login
 
 Page de front interface ==> http://localhost/easyadmin-master/web/app_dev.php/intro
-
 ```
 
 #### How to deploy on Heroku
-
-
 Prérequis avant la phase de déploiement:
 
 Ajout des lignes suivantes dans le front controller de prod donc app.php dans le dossier web:
@@ -171,7 +163,6 @@ web: vendor/bin/heroku-php-apache2 web/
 Créer une application et récupérer le gestionnaire de commande heroku-cli:
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/heroku-cli.gif" width="1000" height="300"/></a>
 <br>
-
 Ajouter une extension postgre pour la persistance des données:
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/postgre.png" width="1000" height="300"/></a>
 <br>
@@ -248,7 +239,6 @@ php bin/console fos:user:promote user ROLE_ADMIN (Afin de vous logger sur l'inte
 Page de login de l'admin interface ==> https://platform-media.herokuapp.com/login
 
 Page de front interface ==> https://platform-media.herokuapp.com/intro
-
 ```
 
 Suppléments de configuration pour la connexion à YouTube:
@@ -281,9 +271,7 @@ Une fois la clé créé copier coller cette clé puis renseigné la dans web/you
 <p align="center">
 Ci-dessous la page Playlist Youtube généré une fois synchronisé avec YouTube!
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/playlist_youtube.gif" width="1000" height="300"/></a>
-   
 </p>
-
 
 #### Synchroniser avec l'application mobile
 - Synchronisation des fichiers uploads sur le File Manager.
