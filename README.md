@@ -1,11 +1,8 @@
 # 🌐 Projet Front-Back End Easy_Admin_YouTube_NewsLetter_Firebase![App Progress Status](https://img.shields.io/badge/Status-Finished-0520b7.svg?style=plastic)
 ================================================================================
 
-<h4 style="text-align: center;">Front:
-Vertin Go Website Design By Mobirise(http://mobirise.com) + Front File Manager
-
-Back end:
-Api YouTube + FireBase(Push Notification) + NewsLetters + File Manager</h4>
+<h4 style="text-align: center;">Front: Vertin Go Website Design By Mobirise(http://mobirise.com) + Front File Manager
+Back end: Api YouTube + FireBase(Push Notification) + NewsLetters + File Manager</h4>
 
 #### Illustrations
 
