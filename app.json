@@ -1,5 +1,5 @@
 {
-  "name": "Easy_Admin_YouTube_Newsletter_Firebase",
+  "name": "Easy_Admin_YouTube_Newsletter",
   "scripts": {},
   "env": {
     "HEROKU_POSTGRESQL_BLUE_URL": {
