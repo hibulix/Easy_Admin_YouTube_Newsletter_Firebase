@@ -211,9 +211,9 @@ l'ajout de l'extension postgre effectué:
 
 Commande de Déploiement:
 Prérequis:
-- *Gestionnaire de commande git!
-- *Gestionnaire de commande composer!
-- *Gestionnaire de commande heroku!
+- *Gestionnaire de commande git!(<a href='https://git-scm.com/download/win' target="_blank">Git Cli</a>)
+- *Gestionnaire de commande composer!(<a href='https://getcomposer.org/download/' target="_blank">Composer Cli</a>)
+- *Gestionnaire de commande heroku!(<a href='https://devcenter.heroku.com/articles/heroku-cli' target="_blank">Heroku Cli</a>)
 
 Créer un projet sur Heroku, installer le gestionnaire de commande Heroku en local et taper les commandes suivantes:
 
