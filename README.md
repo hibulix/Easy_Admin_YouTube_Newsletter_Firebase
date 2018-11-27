@@ -2,7 +2,7 @@
 ================================================================================
 
 <p align="center">
-<h4 style="text-align: center;">Front: Vertin Go Website Design By Mobirise(http://mobirise.com) + Front File Manager
+<h4>Front: Vertin Go Website Design By Mobirise(http://mobirise.com) + Front File Manager
 Back end: Api YouTube + FireBase(Push Notification) + NewsLetters + File Manager</h4>
 </p>
 
