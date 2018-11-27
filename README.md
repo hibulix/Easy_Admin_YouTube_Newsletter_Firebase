@@ -21,7 +21,7 @@ Back end: Api YouTube + FireBase(Push Notification) + NewsLetters + File Manager
 <br>
 ================================================================================
 <br>
-<strong>Ci-dessus tous vos fichiers upload sur le file manager regroupés sous forme de carousel automatique!</strong>    
+<strong>Ci-dessus tous vos fichiers upload sur le File Manager regroupés sous forme de carousel automatique!</strong>    
 <br>
 ================================================================================
 <br>   
@@ -102,7 +102,9 @@ Back-End
 <br>
 ================================================================================
 <br>
-<strong>Pour l'utilisation des newsletters ne pas oublier d'attribuer la valeur default au champs Mandant de la table FosUser!</strong> 
+<strong>Pour l'utilisation des Newsletters ne pas oublier d'attribuer la valeur default au champs Mandant de la table FosUser!</strong> 
+<br>
+================================================================================
 <br>
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/admin10.png" width="1000" height="300"/></a>
 <br>
