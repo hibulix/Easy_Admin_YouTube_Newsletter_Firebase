@@ -4,11 +4,10 @@ Front: Vertin Go Website Design By Mobirise(http://mobirise.com) + Front File Ma
     
 Back end: Api YouTube + FireBase(Push Notification) + NewsLetters + File Manager
 
-
+#### Deploy your own Vertin Go Website project on Heroku!
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase)
 
 #### Illustrations
-
 <p align="center">
     Front-End
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/front.png" width="1000" height="300"/></a>
