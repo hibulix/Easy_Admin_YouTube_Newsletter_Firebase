@@ -19,7 +19,7 @@ Back end: Api YouTube + FireBase(Push Notification) + NewsLetters + File Manager
 <br>
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/file_carousel.gif" width="1000" height="400"/></a>
 <br>
-#### Ci-dessus tous vos fichiers upload sur le file manager regroupés sous forme de carousel automatique!    
+Ci-dessus tous vos fichiers upload sur le file manager regroupés sous forme de carousel automatique!    
 <br>   
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/front4.png" width="1000" height="400"/></a>
 <br>
@@ -50,8 +50,9 @@ Back end: Api YouTube + FireBase(Push Notification) + NewsLetters + File Manager
 ================================================================================
 <br>
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/front11.png" width="1000" height="400"/></a>
-    
-#### Ci-dessous un aperçu de la page Playlist Youtube généré automatiquement une fois votre compte synchronisé avec YouTube!
+<br>
+Ci-dessous un aperçu de la page Playlist Youtube généré automatiquement une fois votre compte synchronisé avec YouTube!
+<br>
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/playlist_youtube.gif" width="1000" height="300"/></a>
 </p>
 <br>
