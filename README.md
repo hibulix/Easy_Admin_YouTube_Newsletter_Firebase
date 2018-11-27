@@ -1,5 +1,8 @@
 # 🌐 Projet Front-Back End Easy_Admin_YouTube_NewsLetter_Firebase![App Progress Status](https://img.shields.io/badge/Status-Finished-0520b7.svg?style=plastic)
 ================================================================================
+
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
 <!-- Place this tag where you want the button to render. -->
 <a class="github-button" href="https://github.com/vertingo" aria-label="Follow @vertingo on GitHub">Follow @vertingo</a>
 
