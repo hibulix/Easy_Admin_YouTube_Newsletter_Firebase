@@ -64,7 +64,6 @@ Back end: Api YouTube + FireBase(Push Notification) + NewsLetters + File Manager
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/playlist_youtube.gif" width="1000" height="300"/></a>
 </p>
 <p align="center">
-<br>
 ================================================================================
 <strong>Back-End</strong>
 ================================================================================
