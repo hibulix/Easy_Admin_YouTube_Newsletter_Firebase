@@ -8,7 +8,7 @@
     "HEROKU_POSTGRESQL_ONYX_URL": {
       "required": true
     },
-    "SYMFONY_ENV": {
+    "SYMFONY_ENV": "production"{
       "required": true
     }
   },
