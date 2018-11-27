@@ -3,10 +3,11 @@
 
 <p align="center">
 Front: Vertin Go Website Design By Mobirise(http://mobirise.com) + Front File Manager
-Back end: Api YouTube + FireBase(Push Notification) + NewsLetters + File Manager
     
-#### Illustrations
+Back end: Api YouTube + FireBase(Push Notification) + NewsLetters + File Manager
 </p>
+
+#### Illustrations
 
 <p align="center">
     Front-End
