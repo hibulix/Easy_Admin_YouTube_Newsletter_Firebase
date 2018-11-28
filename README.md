@@ -1,5 +1,8 @@
 ![Image](https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/vertin_go_website.jpg)
 # 🌐 Projet Front-Back End Easy_Admin_YouTube_NewsLetter_Firebase![App Progress Status](https://img.shields.io/badge/Status-Finished-0520b7.svg?style=plastic)
+### Show some :heart: and star the repo to support the project
+[![GitHub stars](https://img.shields.io/github/stars/nisrulz/screenshott.svg?style=social&label=Star)](https://github.com/nisrulz/screenshott) [![GitHub forks](https://img.shields.io/github/forks/nisrulz/screenshott.svg?style=social&label=Fork)](https://github.com/nisrulz/screenshott/fork) [![GitHub watchers](https://img.shields.io/github/watchers/nisrulz/screenshott.svg?style=social&label=Watch)](https://github.com/nisrulz/screenshott) [![GitHub followers](https://img.shields.io/github/followers/nisrulz.svg?style=social&label=Follow)](https://github.com/nisrulz)
+[![Twitter Follow](https://img.shields.io/twitter/follow/nisrulz.svg?style=social)](https://twitter.com/nisrulz)
 ================================================================================
 Front: Vertin Go Website Design By Mobirise(http://mobirise.com) + Front File Manager
     
