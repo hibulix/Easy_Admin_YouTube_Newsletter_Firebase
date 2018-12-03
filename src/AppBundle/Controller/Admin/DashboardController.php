@@ -28,14 +28,52 @@ class DashboardController extends Controller
     {
 
             $user =$this->get('security.token_storage')->getToken()->getUser();
-            //$user= $this->container->get('security.context')->getToken()->getUser();
             $youtube = new Youtube(array('key' => 'AIzaSyCeHo3HfcxfHwgOTtqDr2yQPxkUoNOVeS8'));
             //$video = $youtube->getVideoInfo('rie-hPVJ7Sw');
             //$video2=$youtube->getChannelByName('Ghettsunsix', $optionalParams = false);
 
             $repository_youtube_infos = $this->getDoctrine()->getRepository('VideoPlayerBundle:YouTubeInfos')->findBy(['username' => ''.$user.'']);
+            $repository_football_infos = $this->getDoctrine()->getRepository('AppBundle:FootballAPI')->findBy(['username' => ''.$user.'']);
             
-            //$channel_id='UC2g_-ipVjit6ZlACPWG4JvA';
+            if(!empty($repository_football_infos))
+            {
+                $ligue=$repository_football_infos[0]->getChampionnatFavori();
+                $joueur=$repository_football_infos[0]->getJoueurFavori();
+                $club=$repository_football_infos[0]->getClubFavori();
+            }
+
+           
+            $tab_fctables=array('Ligue 1' => 
+            array('url1' =>'france/ligue-1/iframe/?type=table&lang_id=2&country=77&template=15&timezone=Europe/Paris',
+                  'url2'=>'france/ligue-1/iframe/?type=league-scores&lang_id=2&country=77&template=15&team=179953&timezone=Europe/Paris',
+                  'url3'=>'france/ligue-1/iframe=/?type=top-scorers&lang_id=2&country=77&template=15&team=179953&timezone=Europe/Paris'),
+                                'Liga' => 
+            array('url1' =>'spain/liga-bbva/iframe/?type=table&lang_id=2&country=201&template=43&timezone=Europe/Paris',
+                  'url2'=>'spain/liga-bbva/iframe/?type=league-scores&lang_id=2&country=201&template=43&timezone=Europe/Paris',
+                  'url3'=>'spain/liga-bbva/iframe/?type=top-scorers&lang_id=2&country=201&template=43&timezone=Europe/Paris'),
+                                'Premier League' => 
+            array('url1' =>'england/premier-league/iframe/?type=table&lang_id=2&country=67&template=10&team=182666&timezone=Europe/Paris',
+                  'url2'=>'england/premier-league/iframe/?type=league-scores&lang_id=2&country=67&template=10&team=182666&timezone=Europe/Paris',
+                  'url3'=>'england/premier-league/iframe/?type=top-scorers&lang_id=2&country=67&template=10&team=182666&timezone=Europe/Paris'),
+                                'Serie A' => 
+            array('url1' =>'italy/serie-a/iframe/?type=table&lang_id=5&country=108&template=17&timezone=Europe/Paris',
+                  'url2'=>'italy/serie-a/iframe/?type=league-scores&lang_id=5&country=108&template=17&timezone=Europe/Paris',
+                  'url3'=>'italy/serie-a/iframe/?type=top-scorers&lang_id=5&country=108&template=17&timezone=Europe/Paris'),
+                                'Kylian Mbappé' => '268900/kylian_mbappe_lottin.jpg',
+                                'Lionel Messi' => '271592/lionel_messi.jpg',
+                                'Karim Benzema' => '264584/karim_benzema.jpg',
+                                'Real-Madrid' =>
+            array('last' => 'real-madrid-192583/iframe/?type=team-last-match&lang_id=2&country=201&template=43&team=192583&timezone=Europe/Paris', 
+                  'next' => 'real-madrid-192583/iframe/?type=team-next-match&lang_id=2&country=201&template=43&team=192583&timezone=Europe/Paris'),
+                                'Barcelone'=>
+            array('last' => 'barcelona-181013/iframe/?type=team-last-match&lang_id=2&country=201&template=43&team=181013&timezone=Europe/Paris', 
+                  'next' => 'barcelona-181013/iframe/?type=team-next-match&lang_id=2&country=201&template=43&team=181013&timezone=Europe/Paris'),
+                                'Chelsea'=> 
+            array('last' => 'chelsea-182666/iframe/?type=team-last-match&lang_id=2&country=67&template=10&team=182666&timezone=Europe/Paris', 
+                  'next' => 'chelsea-182666/iframe/?type=team-next-match&lang_id=2&country=67&template=10&team=182666&timezone=Europe/Paris'));
+            
+            $tab_fctables_perso=array('championnat_favori' => array('ranking'=>$tab_fctables[$ligue[0]]['url1'],'live'=>$tab_fctables[$ligue[0]]['url2'],'topscorer' => $tab_fctables[$ligue[0]]['url3']),'joueur_favori' => $tab_fctables[$joueur[0]],'club_favori' => array('last' => $tab_fctables[$club[0]]['last'],'next'=>$tab_fctables[$club[0]]['next']));
+
             if(!empty($repository_youtube_infos))
             {
             $channel_id=$repository_youtube_infos[0]->getIdyoutube();
@@ -46,7 +84,6 @@ class DashboardController extends Controller
             $lenght_array2=count($array2);
             $i=0;
 
-        
             while($i<$lenght_array2)
             {
                 $idplaylist=$array2[$i]['id'];
@@ -158,6 +195,7 @@ class DashboardController extends Controller
 
         return $this->render(':admin/dashboard:index.html.twig', [
                 'ACCESS_TOKEN_FROM_SERVICE_ACCOUNT' => $access_token['access_token'],
+                'fctables' => $tab_fctables_perso
             ]
         );
     }
@@ -176,3 +214,4 @@ class DashboardController extends Controller
     }
 
 }
+
