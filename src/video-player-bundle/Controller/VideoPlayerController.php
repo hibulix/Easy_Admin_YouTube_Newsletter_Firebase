@@ -167,7 +167,15 @@ class VideoPlayerController extends Controller
             
         ));
     }
-	
+    
+    public function myownchatbotAction()
+    {
+
+
+        return $this->render('VideoPlayerBundle:VideoPlayer:myownchatbot.html.twig', array(
+            
+        ));
+    }
 	
     public function myownvertingowebsiteAction()
     {
