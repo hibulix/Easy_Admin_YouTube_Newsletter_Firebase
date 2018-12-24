@@ -46,6 +46,14 @@ socialblocks:
             priority: 0.5
             changefreq: weekly
             
+myownchatbot:
+    path:     /myownchatbot
+    defaults: { _controller: VideoPlayerBundle:VideoPlayer:myownchatbot }
+    options:
+        sitemap:
+            priority: 0.5
+            changefreq: weekly
+            
 myownvertingowebsite:
     path:     /myownvertingowebsite
     defaults: { _controller: VideoPlayerBundle:VideoPlayer:myownvertingowebsite }
