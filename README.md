@@ -307,6 +307,10 @@ Ci-dessous la page Playlist Youtube généré une fois synchronisé avec YouTube
 </p>
 
 #### Synchroniser avec l'application mobile
+<a href="https://github.com/vertingo/TopSiteApp_Media" target="_blank">Synchroniser l'application Mobile avec la Platform Media!</a> 
+
+<b>[Pour cela déployer votre version de la platform media sur Héroku et si vous installer l'application Mobile depuis Android Studio, changer l'url de récupération des données dans la class RegistrationIntentService par celui de votre url déployer sur Heroku de la forme: https://votre_nom_d_application.herokuapp.com/register_app_mobile]</a></b><br>
+
 - Synchronisation des fichiers uploads sur le File Manager.
 - Synchronisation des vidéos et playlist de votre chaîne YouTube.
 - Synchronisation avec Google Cloud Messaging pour réception de notification push.
