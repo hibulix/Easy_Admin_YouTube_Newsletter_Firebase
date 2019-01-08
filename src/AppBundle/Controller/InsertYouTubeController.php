@@ -78,5 +78,105 @@ class InsertYouTubeController extends Controller
             // ...
         ));
     }
+    
+    
+    public function insertanalyticsAction()
+    {
+        $response=$_POST['response'];
+
+      /*$em = $this->getDoctrine()->getManager();
+        $youtube_analytics = new YouTubeAnalytics();
+
+        $youtube_analytics->setDay($response[0][0]);
+        $youtube_analytics->setViews(7);
+        $youtube_analytics->setEstimatedMinutesWatched(6);
+        $youtube_analytics->setAverageViewDuration(8);
+        $youtube_analytics->setAverageViewPercentage(9);
+        $youtube_analytics->setSubscribersGained(8);
+        $youtube_analytics->setLikes(7);
+        $youtube_analytics->setDislikes(9);
+        $youtube_analytics->setShares(7);
+
+        $em->persist($youtube_analytics);
+        $em->flush();*/
+
+        if(isset($response))
+        {
+            foreach($response as $items)
+            {
+                $day=$items[0];
+                $views=$items[1];
+                $estimated_minutes_watched=$items[2];
+                $average_view_duration=$items[3];
+                $average_view_percentage=$items[4];
+                $subscribers_gained=$items[5];
+                $likes=$items[6];
+                $dislikes=$items[7];
+                $shares=$items[8];
+
+                $repository_youtube_infos_count = $this->getDoctrine()->getRepository('VideoPlayerBundle:YouTubeAnalytics');
+
+                $qb = $repository_youtube_infos_count->createQueryBuilder('u');
+                $qb->where('u.day=:day');
+                $qb->setParameter('day', $day);
+                $youtube_analytics_count = $qb->getQuery()->getResult();
+                $youtube_analytics_count = count($youtube_analytics_count);
+
+                    if($youtube_analytics_count==1)
+                    {
+                        $em = $this->getDoctrine()->getManager();
+                        $queryBuilder = $em->createQueryBuilder();
+                        $queryBuilder->update(YouTubeAnalytics::class, 'u')
+                        ->set('u.day', ':day')
+                        ->set('u.views', ':views')
+                        ->set('u.estimated_minutes_watched', ':estimated_minutes_watched')
+                        ->set('u.average_view_duration', ':average_view_duration')
+                        ->set('u.average_view_percentage', ':average_view_percentage')
+                        ->set('u.subscribers_gained', ':subscribers_gained')
+                        ->set('u.likes', ':likes')
+                        ->set('u.dislikes', ':dislikes')
+                        ->set('u.shares', ':shares')
+                        ->where('u.idyoutube = :idyoutube')
+                        ->setParameter('day',$day)
+                        ->setParameter('views',  $views)
+                        ->setParameter('estimated_minutes_watched',  $estimated_minutes_watched)
+                        ->setParameter('average_view_duration',  $average_view_duration)
+                        ->setParameter('average_view_percentage',  $average_view_percentage)
+                        ->setParameter('subscribers_gained',  $subscribers_gained)
+                        ->setParameter('likes',  $likes)
+                        ->setParameter('dislikes', $dislikes)
+                        ->setParameter('shares',  $shares);
+                        $query = $queryBuilder->getQuery();
+
+                        $query->execute();
+                        $em->flush();
+                    }
+                    else
+                    {
+                        $em = $this->getDoctrine()->getManager();
+                        $youtube_analytics = new YouTubeAnalytics();
+
+                        $youtube_analytics->setDay($day);
+                        $youtube_analytics->setViews($views);
+                        $youtube_analytics->setEstimatedMinutesWatched($estimated_minutes_watched);
+                        $youtube_analytics->setAverageViewDuration($average_view_duration);
+                        $youtube_analytics->setAverageViewPercentage($average_view_percentage);
+                        $youtube_analytics->setSubscribersGained($subscribers_gained);
+                        $youtube_analytics->setLikes($likes);
+                        $youtube_analytics->setDislikes($dislikes);
+                        $youtube_analytics->setShares($shares);
+
+                        $em->persist($youtube_analytics);
+                        $em->flush();
+                    }
+
+                } 
+
+        }
+
+        return $this->render('AppBundle:InsertYouTube:insertid.html.twig', array(
+            // ...
+        ));
+    }
 
 }
