@@ -7,6 +7,7 @@ easy_admin:
           - { label: 'Videos', icon: 'play', entity: 'Video' }
           - { label: 'YouTubePlayList', icon: 'list', entity: 'PlayListYouTube' }
           - { label: 'YouTubeInfos', icon: 'youtube', entity: 'YouTubeInfos' }
+          - { label: 'YouTubeAnalytics', icon: 'youtube', entity: 'YouTubeAnalytics' }
           - { label: 'Newsletter', route: 'newsletters_admin', icon: 'square-o' }
           - { label: 'DownloadFileCounter', icon: 'download', entity: 'DownloadFileCounter' }
           - label: 'menu.settings'
