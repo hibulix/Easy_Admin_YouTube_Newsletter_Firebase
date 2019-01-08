@@ -251,44 +251,7 @@ UploadVideo.prototype.pollForVideoStatus = function() {
                     <div class="panel-body">
                         <div id="buttons">
                         <label> <input id="query" value='cats' type="text"/><button id="search-button" disabled onclick="search()">Search</button></label>
-                        </div>
-                        <div id="search-container">
-                        </div>
-                    </div>
-
-                    <div class="panel-heading">Synchroniser avec le TopSiteApp</i></div>
-                    <div class="panel-body">
-                        <a href='https://play.google.com/store/apps/details?id=com.vertin_go.topsiteapp'><img src="{{ asset('assets/images/github/topsiteapp_demo.gif') }}" width='580px' height='270px'></a>
-                        <a href='https://play.google.com/store/apps/details?id=com.vertin_go.topsiteapp'><img src="{{ asset('assets/images/github/Disponible-sur-App-Store-Logo.jpg') }}" width='600px' height='100px'></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Football LiveScore </i></div>
-                    <div class="panel-body">
-                     <div style="width: 550px; height: 470px; overflow-y: scroll;">
-                     <iframe frameborder="0"  scrolling="no" width="530" height="520" src="https://www.fctables.com/{{fctables.championnat_favori.ranking}}&time=24&po=1&ma=1&wi=1&dr=1&los=1&gf=1&ga=1&gd=1&pts=1&ng=1&form=1&width=530&height=500&font=Verdana&fs=12&lh=22&bg=FFFFFF&fc=333333&logo=1&tlink=1&ths=1&thb=1&thba=FFFFFF&thc=000000&bc=dddddd&hob=f5f5f5&hobc=ebe7e7&lc=333333&sh=1&hfb=1&hbc=3bafda&hfc=FFFFFF"></iframe><div style="text-align:center;"></div>
-                     <iframe frameborder="0"  scrolling="no" width="530" height="440" src="https://www.fctables.com/{{fctables.championnat_favori.live}}&time=24&width=520&height=440&font=Verdana&fs=12&lh=22&bg=FFFFFF&fc=333333&logo=1&tlink=1&scoreb=f4454f&scorefc=FFFFFF&sgdcoreb=8f8d8d&sgdcorefc=FFFFFF&sh=1&hfb=1&hbc=3bafda&hfc=FFFFFF"></iframe><div style="text-align:center;"></div>
-                     <iframe frameborder="0"  scrolling="no" width="530" height="290" src="https://www.fctables.com/{{fctables.championnat_favori.topscorer}}&time=24&limit=10&ppo=1&pte=1&pgo=1&pma=1&pas=1&ppe=1&width=530&height=700&font=Verdana&fs=12&lh=22&bg=FFFFFF&fc=333333&logo=1&tlink=1&ths=1&thb=1&thba=FFFFFF&thc=000000&bc=dddddd&hob=f5f5f5&hobc=ebe7e7&lc=333333&sh=1&hfb=1&hbc=3bafda&hfc=FFFFFF"></iframe><div style="text-align:center;"></div>
-                     <a href="https://www.fctables.com/players/lionel_messi-271592/" title="Lionel Messi stats"><img src="https://www.fctables.com/uploads/infographics/profil/{{fctables.joueur_favori}}" alt="Lionel Messi stats" width="530"/></a>
-                     <iframe frameborder="0"  scrolling="no" width="530" height="200" src="https://www.fctables.com/teams/{{fctables.club_favori.last}}&time=24&width=530&height=200&font=Verdana&fs=12&lh=22&bg=FFFFFF&fc=333333&logo=1&tlink=1&scfs=22&scfc=333333&scb=1&sclg=1&teamls=80&sh=1&hfb=1&hbc=3bafda&hfc=FFFFFF"></iframe><div style="text-align:center;"></div>
-                     <iframe frameborder="0"  scrolling="no" width="530" height="200" src="https://www.fctables.com/teams/{{fctables.club_favori.next}}&time=24&width=530&height=200&font=Verdana&fs=12&lh=22&bg=FFFFFF&fc=333333&logo=1&tlink=1&scfs=22&scfc=333333&scb=1&sclg=1&teamls=80&sh=1&hfb=1&hbc=3bafda&hfc=FFFFFF"></iframe><div style="text-align:center;"></div>
-                    </div>                 
-                 </div>   
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-6">
-          <div class="panel panel-default">
-                  <div class="panel-heading">Authentification YouTube</i></div>
-                  <div class="panel-body">
-                    <div id="___ytsubscribe_0" style="text-indent: 0px; margin: 0px; padding: 0px; background-color: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 168px; height: 48px; background-position: initial initial; background-repeat: initial initial;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 168px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 48px;" tabindex="0" vspace="0" width="100%" id="I0_1480693990910" name="I0_1480693990910" src="https://www.youtube.com/subscribe_embed?usegapi=1&channelid=UC2g_-ipVjit6ZlACPWG4JvA&layout=full&count=false&origin=http%3A%2F%2Fvertin-go.com&gsrc=3p&ic=1&jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en_US.DCqkg4_f1cE.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCN29Itx_77YsW7KCcAVebosjZAOGA#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&id=I0_1480693990910&parent=http%3A%2F%2Fvertin-go.com&pfname=&rpctoken=32231505" data-gapiattached="true"></iframe></div><div id="ytsubscribe-events-log"></div>
-
-                     <script src="https://apis.google.com/js/api.js"></script>
+                         <script src="https://apis.google.com/js/api.js"></script>
                     <script>
                       function authenticate() 
                       {
@@ -353,7 +316,45 @@ UploadVideo.prototype.pollForVideoStatus = function() {
 
                   </script>
                   <button onclick="authenticate().then(loadClient)">Authorize First And Load</button>
-                  <button onclick="execute()">Load YouTubeData Analytics</button>
+                  <button onclick="execute()">Load YouTube Analytics</button>
+                        </div>
+                        <div id="search-container">
+                        </div>
+                    </div>
+
+                    <div class="panel-heading">Synchroniser avec le TopSiteApp</i></div>
+                    <div class="panel-body">
+                        <a href='https://play.google.com/store/apps/details?id=com.vertin_go.topsiteapp'><img src="{{ asset('assets/images/github/topsiteapp_demo.gif') }}" width='580px' height='270px'></a>
+                        <a href='https://play.google.com/store/apps/details?id=com.vertin_go.topsiteapp'><img src="{{ asset('assets/images/github/Disponible-sur-App-Store-Logo.jpg') }}" width='600px' height='100px'></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Football LiveScore </i></div>
+                    <div class="panel-body">
+                     <div style="width: 550px; height: 470px; overflow-y: scroll;">
+                     <iframe frameborder="0"  scrolling="no" width="530" height="520" src="https://www.fctables.com/{{fctables.championnat_favori.ranking}}&time=24&po=1&ma=1&wi=1&dr=1&los=1&gf=1&ga=1&gd=1&pts=1&ng=1&form=1&width=530&height=500&font=Verdana&fs=12&lh=22&bg=FFFFFF&fc=333333&logo=1&tlink=1&ths=1&thb=1&thba=FFFFFF&thc=000000&bc=dddddd&hob=f5f5f5&hobc=ebe7e7&lc=333333&sh=1&hfb=1&hbc=3bafda&hfc=FFFFFF"></iframe><div style="text-align:center;"></div>
+                     <iframe frameborder="0"  scrolling="no" width="530" height="440" src="https://www.fctables.com/{{fctables.championnat_favori.live}}&time=24&width=520&height=440&font=Verdana&fs=12&lh=22&bg=FFFFFF&fc=333333&logo=1&tlink=1&scoreb=f4454f&scorefc=FFFFFF&sgdcoreb=8f8d8d&sgdcorefc=FFFFFF&sh=1&hfb=1&hbc=3bafda&hfc=FFFFFF"></iframe><div style="text-align:center;"></div>
+                     <iframe frameborder="0"  scrolling="no" width="530" height="290" src="https://www.fctables.com/{{fctables.championnat_favori.topscorer}}&time=24&limit=10&ppo=1&pte=1&pgo=1&pma=1&pas=1&ppe=1&width=530&height=700&font=Verdana&fs=12&lh=22&bg=FFFFFF&fc=333333&logo=1&tlink=1&ths=1&thb=1&thba=FFFFFF&thc=000000&bc=dddddd&hob=f5f5f5&hobc=ebe7e7&lc=333333&sh=1&hfb=1&hbc=3bafda&hfc=FFFFFF"></iframe><div style="text-align:center;"></div>
+                     <a href="https://www.fctables.com/players/lionel_messi-271592/" title="Lionel Messi stats"><img src="https://www.fctables.com/uploads/infographics/profil/{{fctables.joueur_favori}}" alt="Lionel Messi stats" width="530"/></a>
+                     <iframe frameborder="0"  scrolling="no" width="530" height="200" src="https://www.fctables.com/teams/{{fctables.club_favori.last}}&time=24&width=530&height=200&font=Verdana&fs=12&lh=22&bg=FFFFFF&fc=333333&logo=1&tlink=1&scfs=22&scfc=333333&scb=1&sclg=1&teamls=80&sh=1&hfb=1&hbc=3bafda&hfc=FFFFFF"></iframe><div style="text-align:center;"></div>
+                     <iframe frameborder="0"  scrolling="no" width="530" height="200" src="https://www.fctables.com/teams/{{fctables.club_favori.next}}&time=24&width=530&height=200&font=Verdana&fs=12&lh=22&bg=FFFFFF&fc=333333&logo=1&tlink=1&scfs=22&scfc=333333&scb=1&sclg=1&teamls=80&sh=1&hfb=1&hbc=3bafda&hfc=FFFFFF"></iframe><div style="text-align:center;"></div>
+                    </div>                 
+                 </div>   
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+          <div class="panel panel-default">
+                  <div class="panel-heading">Authentification YouTube</i></div>
+                  <div class="panel-body">
+                    <div id="___ytsubscribe_0" style="text-indent: 0px; margin: 0px; padding: 0px; background-color: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 168px; height: 48px; background-position: initial initial; background-repeat: initial initial;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 168px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 48px;" tabindex="0" vspace="0" width="100%" id="I0_1480693990910" name="I0_1480693990910" src="https://www.youtube.com/subscribe_embed?usegapi=1&channelid=UC2g_-ipVjit6ZlACPWG4JvA&layout=full&count=false&origin=http%3A%2F%2Fvertin-go.com&gsrc=3p&ic=1&jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en_US.DCqkg4_f1cE.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCN29Itx_77YsW7KCcAVebosjZAOGA#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&id=I0_1480693990910&parent=http%3A%2F%2Fvertin-go.com&pfname=&rpctoken=32231505" data-gapiattached="true"></iframe></div><div id="ytsubscribe-events-log"></div>
+
+                    
                   
                         <span id="signinButton" class="pre-sign-in">
                     <!-- IMPORTANT: Replace the value of the <code>data-clientid</code>
