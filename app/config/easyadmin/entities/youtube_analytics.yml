@@ -1,7 +1,7 @@
 easy_admin:
     entities:
         YouTubeAnalytics:
-            disabled_actions: ['edit','new']
+            disabled_actions: ['delete','edit','new']
             label: "YouTubeAnalytics"
           #  controller: VideoPlayerBundle\Controller\Admin\UserController
             class: VideoPlayerBundle\Entity\YouTubeAnalytics
