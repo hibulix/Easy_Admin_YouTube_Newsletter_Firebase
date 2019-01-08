@@ -84,22 +84,6 @@ class InsertYouTubeController extends Controller
     {
         $response=$_POST['response'];
 
-      /*$em = $this->getDoctrine()->getManager();
-        $youtube_analytics = new YouTubeAnalytics();
-
-        $youtube_analytics->setDay($response[0][0]);
-        $youtube_analytics->setViews(7);
-        $youtube_analytics->setEstimatedMinutesWatched(6);
-        $youtube_analytics->setAverageViewDuration(8);
-        $youtube_analytics->setAverageViewPercentage(9);
-        $youtube_analytics->setSubscribersGained(8);
-        $youtube_analytics->setLikes(7);
-        $youtube_analytics->setDislikes(9);
-        $youtube_analytics->setShares(7);
-
-        $em->persist($youtube_analytics);
-        $em->flush();*/
-
         if(isset($response))
         {
             foreach($response as $items)
