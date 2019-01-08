@@ -288,6 +288,73 @@ UploadVideo.prototype.pollForVideoStatus = function() {
                   <div class="panel-body">
                     <div id="___ytsubscribe_0" style="text-indent: 0px; margin: 0px; padding: 0px; background-color: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 168px; height: 48px; background-position: initial initial; background-repeat: initial initial;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 168px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 48px;" tabindex="0" vspace="0" width="100%" id="I0_1480693990910" name="I0_1480693990910" src="https://www.youtube.com/subscribe_embed?usegapi=1&channelid=UC2g_-ipVjit6ZlACPWG4JvA&layout=full&count=false&origin=http%3A%2F%2Fvertin-go.com&gsrc=3p&ic=1&jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en_US.DCqkg4_f1cE.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCN29Itx_77YsW7KCcAVebosjZAOGA#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&id=I0_1480693990910&parent=http%3A%2F%2Fvertin-go.com&pfname=&rpctoken=32231505" data-gapiattached="true"></iframe></div><div id="ytsubscribe-events-log"></div>
 
+                     <script src="https://apis.google.com/js/api.js"></script>
+                    <script>
+                      function authenticate() 
+                      {
+                              return gapi.auth2.getAuthInstance()
+                            .signIn({scope: "https://www.googleapis.com/auth/yt-analytics.readonly"})
+                            .then(function() { console.log("Sign-in successful"); },
+                            function(err) { console.error("Error signing in", err); });
+                      }
+
+                      function loadClient() 
+                      {
+                              return gapi.client.load("https://youtubeanalytics.googleapis.com/$discovery/rest?version=v2")
+                            .then(function() { console.log("GAPI client loaded for API"); },
+                            function(err) 
+                            { 
+                            console.error("Error loading GAPI client for API", err); 
+                            });
+                      }
+
+                      // Make sure the client is loaded and sign-in is complete before calling this method.
+                      function execute() 
+                      {
+                          return gapi.client.youtubeAnalytics.reports.query({
+                          "ids": "channel==MINE",
+                          "startDate": "2017-01-01",
+                          "endDate": "2019-01-08",
+                          "metrics": "views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage,subscribersGained,likes,dislikes,shares",
+                          "dimensions": "day",
+                          "sort": "day"
+                          })
+                          .then(function(response) 
+                          {
+                          // Handle the results here (response.result has the parsed body).
+                          
+                          console.log("Response",response);
+
+                          console.log("Response2",response.result);
+
+                              $.ajax({
+                              type: 'post',
+                              url: 'https://platform-media.herokuapp.com/insertyoutubeanalytics',
+                              data: { 
+                                response: response.result.rows
+                                },
+                              success: function (response, request) {
+                              
+                              }
+                        
+                          });
+                          },
+                          function(err) 
+                          { 
+                          console.error("Execute error", err); 
+                          });
+
+                      }
+
+                    gapi.load("client:auth2", function() 
+                    {
+                          gapi.auth2.init({client_id: '882069140224-tna2rbns6nr1m409s6so4etpcao9dju5.apps.googleusercontent.com'});
+                    });
+
+                  </script>
+                  <button onclick="authenticate().then(loadClient)">Authorize and load</button>
+                  <button onclick="execute()">Load YouTubeData Analytics</button>
+                  
                         <span id="signinButton" class="pre-sign-in">
                     <!-- IMPORTANT: Replace the value of the <code>data-clientid</code>
                     attribute in the following tag with your project's client ID. -->
