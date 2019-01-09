@@ -270,14 +270,23 @@ UploadVideo.prototype.pollForVideoStatus = function() {
                             console.error("Error loading GAPI client for API", err); 
                             });
                       }
+                      
+                      function convertDate(inputFormat) 
+                      {
+                              function pad(s) { return (s < 10) ? '0' + s : s; }
+                              var d = new Date(inputFormat);
+                              return [d.getFullYear(),pad(d.getMonth()+1),pad(d.getDate())].join('-');
+                      }
 
                       // Make sure the client is loaded and sign-in is complete before calling this method.
                       function execute() 
                       {
+                          var d = new Date();
+                          
                           return gapi.client.youtubeAnalytics.reports.query({
                           "ids": "channel==MINE",
                           "startDate": "2017-01-01",
-                          "endDate": "2019-01-08",
+                          "endDate": convertDate(d),
                           "metrics": "views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage,subscribersGained,likes,dislikes,shares",
                           "dimensions": "day",
                           "sort": "day"
