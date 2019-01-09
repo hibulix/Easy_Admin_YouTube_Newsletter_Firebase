@@ -106,36 +106,7 @@ class InsertYouTubeController extends Controller
                 $youtube_analytics_count = $qb->getQuery()->getResult();
                 $youtube_analytics_count = count($youtube_analytics_count);
 
-                    if($youtube_analytics_count==1)
-                    {
-                        $em = $this->getDoctrine()->getManager();
-                        $queryBuilder = $em->createQueryBuilder();
-                        $queryBuilder->update(YouTubeAnalytics::class, 'u')
-                        ->set('u.day', ':day')
-                        ->set('u.views', ':views')
-                        ->set('u.estimated_minutes_watched', ':estimated_minutes_watched')
-                        ->set('u.average_view_duration', ':average_view_duration')
-                        ->set('u.average_view_percentage', ':average_view_percentage')
-                        ->set('u.subscribers_gained', ':subscribers_gained')
-                        ->set('u.likes', ':likes')
-                        ->set('u.dislikes', ':dislikes')
-                        ->set('u.shares', ':shares')
-                        ->where('u.idyoutube = :idyoutube')
-                        ->setParameter('day',$day)
-                        ->setParameter('views',  $views)
-                        ->setParameter('estimated_minutes_watched',  $estimated_minutes_watched)
-                        ->setParameter('average_view_duration',  $average_view_duration)
-                        ->setParameter('average_view_percentage',  $average_view_percentage)
-                        ->setParameter('subscribers_gained',  $subscribers_gained)
-                        ->setParameter('likes',  $likes)
-                        ->setParameter('dislikes', $dislikes)
-                        ->setParameter('shares',  $shares);
-                        $query = $queryBuilder->getQuery();
-
-                        $query->execute();
-                        $em->flush();
-                    }
-                    else
+                    if($youtube_analytics_count==0)
                     {
                         $em = $this->getDoctrine()->getManager();
                         $youtube_analytics = new YouTubeAnalytics();
