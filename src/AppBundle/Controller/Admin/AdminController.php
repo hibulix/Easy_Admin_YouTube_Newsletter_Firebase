@@ -5,6 +5,8 @@ namespace AppBundle\Controller\Admin;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AdminController as BaseAdminController;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Request;
+use AppBundle\Service\CsvExporter;
+use VideoPlayerBundle\Entity\YouTubeAnalytics;
 
 /**
  * @author Arthur Gribet <a.gribet@gmail.com>
