@@ -37,7 +37,47 @@ class CsvExporter
         $response->headers->set('Content-Disposition', 'attachment; filename="' . $filename . '"');
         return $response;
     }
+    
     private function getColumnsForEntity($class)
     {
+        $columns[YouTubeAnalytics::class] = [
+            'Day' => function (YouTubeAnalytics $youtubeanalytics) {
+                return $youtubeanalytics->getDay();
+            },
+            'Views' => function (YouTubeAnalytics $youtubeanalytics) {
+                return $youtubeanalytics->getViews();
+            },
+            'Estimated_minutes_watched' => function (YouTubeAnalytics $youtubeanalytics) {
+                return $youtubeanalytics->getEstimatedMinutesWatched();
+            },
+            'Average_view_duration' => function (YouTubeAnalytics $youtubeanalytics) {
+                return $youtubeanalytics->getAverageViewDuration();
+            },
+            'Average_view_percentage' => function (YouTubeAnalytics $youtubeanalytics) {
+                return $youtubeanalytics->getAverageViewPercentage();
+            },
+            'Subscribers_gained' => function (YouTubeAnalytics $youtubeanalytics) {
+                return $youtubeanalytics->getSubscribersGained();
+            },
+            'Likes' => function (YouTubeAnalytics $youtubeanalytics) {
+                return $youtubeanalytics->getLikes();
+            },
+            'Dislikes' => function (YouTubeAnalytics $youtubeanalytics) {
+                return $youtubeanalytics->getDislikes();
+            },
+            'Shares' => function (YouTubeAnalytics $youtubeanalytics) {
+                return $youtubeanalytics->getShares();
+            },
+            // ...
+        ];
+ 
+        if (array_key_exists($class, $columns)) {
+            return $columns[$class];
+        }
+ 
+        throw new \InvalidArgumentException(sprintf(
+            'No columns set for "%s" entity',
+            $class
+        ));
     }
 }
