@@ -55,7 +55,7 @@ class AdminController extends BaseAdminController
         return $this->csvExporter->getResponseFromQueryBuilder(
             $queryBuilder,
             YouTubeAnalytics::class,
-            'genuses.csv'
+            'YouTubeAnalytics.csv'
         );
     }
 
