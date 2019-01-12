@@ -174,7 +174,6 @@ Pour les recréer voir les commandes ci-dessous:</strong>
 ================================================================================
 <br>
 </p>
-
 ```
 composer install
 
@@ -261,9 +260,9 @@ l'ajout de l'extension postgre effectué:
     }
     }
 ```
-<br>
 ================================================================================
 <br>
+
 Commande de Déploiement:
 Prérequis:
 - *Gestionnaire de commande git!(<a href='https://git-scm.com/download/win' target="_blank">Git Cli</a>)
