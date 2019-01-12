@@ -309,7 +309,6 @@ Page de login de l'admin interface ==> https://platform-media.herokuapp.com/logi
 
 Page de front interface ==> https://platform-media.herokuapp.com/intro
 ```
-<br>
 ================================================================================
 <br>
 Suppléments de configuration pour la connexion à YouTube:
