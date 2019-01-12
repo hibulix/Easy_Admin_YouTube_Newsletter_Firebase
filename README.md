@@ -190,6 +190,7 @@ Page de login de l'admin interface ==> http://localhost/easyadmin-master/web/app
 
 Page de front interface ==> http://localhost/easyadmin-master/web/app_dev.php/intro
 ```
+================================================================================
 
 #### How to deploy on Heroku
 Prérequis avant la phase de déploiement:
