@@ -334,7 +334,7 @@ Et URI de redirection autorisés:
 - http://votre_heroku_app.herokuapp.com/admin/dashboard/
 - http://localhost/easyadmin-master/web/app_dev.php/admin/dashboard/
 
-Une fois la clé créé copier coller cette clé puis renseigné la dans web/youtube:
+Une fois la clé créé copier coller cette clé puis renseigné la dans le dossier web/youtube:
 - auth.js ligne 5
 - analytics_codelab.js ligne 4
 
