@@ -160,7 +160,7 @@ config_dev.yml et en ligne config_prod.yml!
 <br>
 ================================================================================
 <br>
-<strong>Cliquer sur admin pour accéder à l'interface phpMyAdmin:</strong>
+<strong>Cliquer sur admin pour accéder à l'interface PhpMyAdmin:</strong>
 <br>
 ================================================================================
 <br>
@@ -213,7 +213,7 @@ Créer une application et récupérer le gestionnaire de commande heroku-cli:
 <br>
 ================================================================================
 <br>
-<strong>Ajouter une extension PostGre pour la persistance des données:</strong>
+<strong>Ajouter une extension PostgreSQL pour la persistance des données:</strong>
 <br>
 ================================================================================
 <br>
@@ -247,7 +247,7 @@ Créer une application et récupérer le gestionnaire de commande heroku-cli:
 <br>
 Les différents champs doivent être ajouter dans le parameters.yml et parameters.yml.dist dans app/config dans les variables d'environnements prod donc database_host_prod. Pour database_host_mandanta et b il faut ajouter une fois de plus la même 
 extension postgre! Il faut également préciser la variable d'environnement database url dans composer.json disponible une fois 
-l'ajout de l'extension postgre effectué:
+l'ajout de l'extension PostgreSQL effectué:
 </p>
 
 ```
@@ -261,7 +261,6 @@ l'ajout de l'extension postgre effectué:
     }
     }
 ```
-<br>
 ================================================================================
 <br>
 
