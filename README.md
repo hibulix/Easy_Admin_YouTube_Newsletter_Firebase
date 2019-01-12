@@ -68,8 +68,6 @@ Back end: Api YouTube + FireBase(Push Notification) + NewsLetters + File Manager
 ================================================================================
 <br>
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/playlist_youtube.gif" width="1000" height="300"/></a>
-</p>
-<p align="center">
 ================================================================================
 <strong>Back-End</strong>
 ================================================================================
@@ -263,7 +261,9 @@ l'ajout de l'extension postgre effectué:
     }
     }
 ```
-
+<br>
+================================================================================
+<br>
 Commande de Déploiement:
 Prérequis:
 - *Gestionnaire de commande git!(<a href='https://git-scm.com/download/win' target="_blank">Git Cli</a>)
@@ -309,7 +309,9 @@ Page de login de l'admin interface ==> https://platform-media.herokuapp.com/logi
 
 Page de front interface ==> https://platform-media.herokuapp.com/intro
 ```
-
+<br>
+================================================================================
+<br>
 Suppléments de configuration pour la connexion à YouTube:
 
 Créer un projet dans Google Cloud Console! Activer YouTube Data Api V3
