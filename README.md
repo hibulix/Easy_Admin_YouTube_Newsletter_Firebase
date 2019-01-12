@@ -93,7 +93,7 @@ Back end: Api YouTube + FireBase(Push Notification) + NewsLetters + File Manager
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/admin2-7.png" width="1000" height="300"/></a>
 <br>
 ================================================================================
-    Personnaliser votre Panel Football LiveScore en choississant votre championnat, joueur et club favori!
+<strong>Personnaliser votre Panel Football LiveScore en choississant votre championnat, joueur et club favori!</strong>
 ================================================================================
 <br>
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/admin3.png" width="1000" height="300"/></a>
@@ -162,7 +162,7 @@ config_dev.yml et en ligne config_prod.yml!
 <br>
 ================================================================================
 <br>
-Cliquer sur admin pour accéder à l'interface phpMyAdmin:
+<strong>Cliquer sur admin pour accéder à l'interface phpMyAdmin:</strong>
 <br>
 ================================================================================
 <br>
@@ -170,8 +170,8 @@ Cliquer sur admin pour accéder à l'interface phpMyAdmin:
 <br>
 ================================================================================
 <br>
-Une fois vos bases de données recréés elles seront accessibles dans PhpMyAdmin!<br>
-Pour les recréer voir les commandes ci-dessous:
+<strong>Une fois vos bases de données recréés elles seront accessibles dans PhpMyAdmin!<br>
+Pour les recréer voir les commandes ci-dessous:</strong>
 <br>
 ================================================================================
 <br>
@@ -215,7 +215,7 @@ Créer une application et récupérer le gestionnaire de commande heroku-cli:
 <br>
 ================================================================================
 <br>
-Ajouter une extension PostGre pour la persistance des données:
+<strong>Ajouter une extension PostGre pour la persistance des données:</strong>
 <br>
 ================================================================================
 <br>
@@ -223,7 +223,7 @@ Ajouter une extension PostGre pour la persistance des données:
 <br>
 ================================================================================
 <br>
-Cliquer sur votre extension dans le sous menu du champs recherche:
+<strong>Cliquer sur votre extension dans le sous menu du champs recherche:</strong>
 <br>
 ================================================================================
 <br>
@@ -231,7 +231,7 @@ Cliquer sur votre extension dans le sous menu du champs recherche:
 <br>
 ================================================================================
 <br>
-Cliquer ensuite sur settings:
+<strong>Cliquer ensuite sur settings:</strong>
 <br>
 ================================================================================
 <br>
@@ -239,11 +239,13 @@ Cliquer ensuite sur settings:
 <br>
 ================================================================================
 <br>
-Cliquer sur view credentials:
+<strong>Cliquer sur view credentials:</strong>
 <br>
 ================================================================================
 <br>
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/postgre4.png" width="1000" height="300"/></a>
+<br>
+================================================================================
 <br>
 Les différents champs doivent être ajouter dans le parameters.yml et parameters.yml.dist dans app/config dans les variables d'environnements prod donc database_host_prod. Pour database_host_mandanta et b il faut ajouter une fois de plus la même 
 extension postgre! Il faut également préciser la variable d'environnement database url dans composer.json disponible une fois 
@@ -316,7 +318,7 @@ Créer un projet dans Google Cloud Console! Activer YouTube Data Api V3
 <br>
 ================================================================================
 <br>
-Cliquer sur créer des identifiants Id Client Auth
+<strong>Cliquer sur créer des identifiants Id Client Auth</strong>
 <br>
 ================================================================================
 <br>
