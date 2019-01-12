@@ -346,9 +346,8 @@ Une fois la clé créé copier coller cette clé puis renseigné la dans le doss
 Ci-dessous la page Playlist Youtube généré une fois synchronisé avec YouTube!
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/playlist_youtube.gif" width="1000" height="300"/></a>
 </p>
-<br>
 ================================================================================
-<br>
+
 #### Synchroniser avec l'application mobile!
 <a href="https://github.com/vertingo/TopSiteApp_Media" target="_blank">Synchroniser l'application Mobile avec la Platform Media!</a> 
 
