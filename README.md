@@ -200,18 +200,35 @@ web: vendor/bin/heroku-php-apache2 web/
 Créer une application et récupérer le gestionnaire de commande heroku-cli:
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/heroku-cli.gif" width="1000" height="300"/></a>
 <br>
+================================================================================
+<br>
 Ajouter une extension postgre pour la persistance des données:
+<br>
+================================================================================
+<br>
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/postgre.png" width="1000" height="300"/></a>
+<br>
+================================================================================
 <br>
 Cliquer sur votre extension dans le sous menu du champs recherche:
 <br>
+================================================================================
+<br>
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/postgre2.png" width="1000" height="300"/></a>
+<br>
+================================================================================
 <br>
 Cliquer ensuite sur settings:
 <br>
+================================================================================
+<br>
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/postgre3.png" width="1000" height="300"/></a>
 <br>
+================================================================================
+<br>
 Cliquer sur view credentials:
+<br>
+================================================================================
 <br>
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/postgre4.png" width="1000" height="300"/></a>
 <br>
@@ -284,7 +301,11 @@ Créer un projet dans Google Cloud Console! Activer YouTube Data Api V3
 <p align="center">
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/google cloud console.png" width="1000" height="300"/></a>
 <br>
+================================================================================
+<br>
 Cliquer sur créer des identifiants Id Client Auth
+<br>
+================================================================================
 <br>
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/google cloud console2.png" width="1000" height="300"/></a>
 <br>
