@@ -168,8 +168,13 @@ Cliquer sur admin pour accéder à l'interface phpMyAdmin:
 <br>
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/phpmyadmin.png" width="1000" height="300"/></a>
 <br>
+================================================================================
+<br>
 Une fois vos bases de données recréés elles seront accessibles dans PhpMyAdmin!<br>
 Pour les recréer voir les commandes ci-dessous:
+<br>
+================================================================================
+<br>
 </p>
 
 ```
@@ -191,22 +196,26 @@ Page de front interface ==> http://localhost/easyadmin-master/web/app_dev.php/in
 #### How to deploy on Heroku
 Prérequis avant la phase de déploiement:
 
-Ajout des lignes suivantes dans le front controller de prod donc app.php dans le dossier web:
+Ajout des lignes suivantes dans le Front Controller de prod donc app.php dans le dossier web:
 
+```
 Request::setTrustedProxies(array($request->server->get('REMOTE_ADDR')));
 Request::setTrustedHeaderName(Request::HEADER_FORWARDED, null);
 Request::setTrustedHeaderName(Request::HEADER_CLIENT_HOST, null);
+```
 
-Ajout d'un fichier procfile avec le contenu suivant spécifique pour les applications symfony dans le dossier web:
+Ajout d'un fichier procfile avec le contenu suivant spécifique pour les applications Symfony dans le dossier racine du projet:
 
+```
 web: vendor/bin/heroku-php-apache2 web/
+```
 <p align="center">    
 Créer une application et récupérer le gestionnaire de commande heroku-cli:
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/heroku-cli.gif" width="1000" height="300"/></a>
 <br>
 ================================================================================
 <br>
-Ajouter une extension postgre pour la persistance des données:
+Ajouter une extension PostGre pour la persistance des données:
 <br>
 ================================================================================
 <br>
