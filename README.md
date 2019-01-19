@@ -91,7 +91,7 @@ Back end: Api YouTube + FireBase(Push Notification) + NewsLetters + File Manager
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/admin2-2.png" width="1000" height="300"/></a>
 <br>
 ================================================================================
-Comment intégrer des données analytics:
+Comment intégrer des données analytics en deux vidéos:
     
 - YouTube Analytics: https://www.youtube.com/watch?v=ZdW62t0K_MU
 - Google Analytics: https://www.youtube.com/watch?v=ZdW62t0K_MU
@@ -324,7 +324,7 @@ Page de front interface ==> https://platform-media.herokuapp.com/intro
 ```
 ================================================================================
 <br>
-Suppléments de configuration pour la connexion à YouTube:
+Suppléments de configuration pour la connexion à YouTube et Google Analytics:
 
 Créer un projet dans Google Cloud Console! Activer YouTube Data Api V3
 <p align="center">
@@ -354,11 +354,133 @@ Une fois la clé créé copier coller cette clé puis renseigné la dans le doss
  Une fois la connexion via Google configuré logger vous sur votre Interface Admin afin de synchroniser votre compte avec YouTube
  et ensuite accédez à la page: https://votre_heroku_app.herokuapp.com/listplaylist?pseudo=votre_nom_d_utilisateur
  Voici l'exemple de ma page playlist automatiquement généré une fois loggé sur mon espace administrateur et la connexion établi via      YouTube Api V3: https://platform-media.herokuapp.com/listplaylist?pseudo=vertingo
- 
+  
 <p align="center">
 Ci-dessous la page Playlist Youtube généré une fois synchronisé avec YouTube!
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/playlist_youtube.gif" width="1000" height="300"/></a>
 </p>
+
+####  Google Analytics - Demo & Tools
+
+Create a service account on the Google Cloud Console by going to the following link:
+https://developers.google.com/identity/protocols/OAuth2ServiceAccount#creatinganaccount
+
+Once the service account is created, you can click the Generate New JSON Key button to create and download the key and add it to your project.
+
+The service account you created in the previous step has an email address that you can add to any of the Google Analytics views you'd like to request data from. 
+It's generally best to only grant the service account read-only access.
+
+```
+pip install --upgrade oauth2client
+```
+
+```
+# service-account.py
+
+from oauth2client.service_account import ServiceAccountCredentials
+
+# The scope for the OAuth2 request.
+SCOPE = 'https://www.googleapis.com/auth/analytics.readonly'
+
+# The location of the key file with the key data.
+KEY_FILEPATH = 'path/to/json-key.json'
+
+# Defines a method to get an access token from the ServiceAccount object.
+def get_access_token():
+  return ServiceAccountCredentials.from_json_keyfile_name(
+      KEY_FILEPATH, SCOPE).get_access_token().access_token
+```
+
+```
+<script>
+(function(w,d,s,g,js,fs){
+  g=w.gapi||(w.gapi={});g.analytics={q:[],ready:function(f){this.q.push(f);}};
+  js=d.createElement(s);fs=d.getElementsByTagName(s)[0];
+  js.src='https://apis.google.com/js/platform.js';
+  fs.parentNode.insertBefore(js,fs);js.onload=function(){g.load('analytics');};
+}(window,document,'script'));
+</script>
+```
+
+```
+<div id="chart-1-container"></div>
+<div id="chart-2-container"></div>
+```
+
+```
+<script>
+
+gapi.analytics.ready(function() {
+
+  /**
+   * Authorize the user with an access token obtained server side.
+   */
+  gapi.analytics.auth.authorize({
+    'serverAuth': {
+      'access_token': '{{ ACCESS_TOKEN_FROM_SERVICE_ACCOUNT }}'
+    }
+  });
+
+
+  /**
+   * Creates a new DataChart instance showing sessions over the past 30 days.
+   * It will be rendered inside an element with the id "chart-1-container".
+   */
+  var dataChart1 = new gapi.analytics.googleCharts.DataChart({
+    query: {
+      'ids': 'ga:100367422', // <-- Replace with the ids value for your view.
+      'start-date': '30daysAgo',
+      'end-date': 'yesterday',
+      'metrics': 'ga:sessions,ga:users',
+      'dimensions': 'ga:date'
+    },
+    chart: {
+      'container': 'chart-1-container',
+      'type': 'LINE',
+      'options': {
+        'width': '100%'
+      }
+    }
+  });
+  dataChart1.execute();
+
+
+  /**
+   * Creates a new DataChart instance showing top 5 most popular demos/tools
+   * amongst returning users only.
+   * It will be rendered inside an element with the id "chart-3-container".
+   */
+  var dataChart2 = new gapi.analytics.googleCharts.DataChart({
+    query: {
+      'ids': 'ga:100367422', // <-- Replace with the ids value for your view.
+      'start-date': '30daysAgo',
+      'end-date': 'yesterday',
+      'metrics': 'ga:pageviews',
+      'dimensions': 'ga:pagePathLevel1',
+      'sort': '-ga:pageviews',
+      'filters': 'ga:pagePathLevel1!=/',
+      'max-results': 7
+    },
+    chart: {
+      'container': 'chart-2-container',
+      'type': 'PIE',
+      'options': {
+        'width': '100%',
+        'pieHole': 4/9,
+      }
+    }
+  });
+  dataChart2.execute();
+
+});
+</script>
+```
+
+If nothing is displayed don't forget to authorize the app to the following url:
+https://ga-dev-tools.appspot.com/embed-api/basic-dashboard/
+
+and also activate the Analytics API in Google Cloud Console!
+
 ================================================================================
 
 #### Synchroniser avec l'application mobile!
