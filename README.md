@@ -91,7 +91,8 @@ Back end: Api YouTube + FireBase(Push Notification) + NewsLetters + File Manager
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/admin2-2.png" width="1000" height="300"/></a>
 <br>
 ================================================================================
-Comment intégrer des données analytics en deux vidéos:
+Données extraites de Google Analytics et mise en forme sous forme de graphique!
+Ci-dessous comment intégrer des données analytics en deux vidéos:
     
 - YouTube Analytics: https://www.youtube.com/watch?v=ZdW62t0K_MU
 - Google Analytics: https://www.youtube.com/watch?v=ZdW62t0K_MU
@@ -477,9 +478,10 @@ gapi.analytics.ready(function() {
 ```
 
 If nothing is displayed don't forget to authorize the app to the following url:
+
 https://ga-dev-tools.appspot.com/embed-api/basic-dashboard/
 
-and also activate the Analytics API in Google Cloud Console!
+and also don't forget to activate the Analytics API in Google Cloud Console!
 
 ================================================================================
 
