@@ -92,7 +92,9 @@ Back end: Api YouTube + FireBase(Push Notification) + NewsLetters + File Manager
 <br>
 ================================================================================
  Deux vidéos pour vous montrer comment intégrer YouTube et Google Analytics:
+    
     - ==> https://www.youtube.com/watch?v=ZdW62t0K_MU
+    
     - ==> https://www.youtube.com/watch?v=ZdW62t0K_MU
 ================================================================================
 <br>
