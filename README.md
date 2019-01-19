@@ -99,9 +99,11 @@ Ci-dessous comment intégrer des données analytics en deux vidéos:
 - Google Analytics: https://www.youtube.com/watch?v=ZdW62t0K_MU</strong>
 
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/admin2-7.png" width="1000" height="300"/></a>
-<br>
+</p>
+
+<p align="center">
 ================================================================================
-Personnaliser votre Panel Football LiveScore en choississant votre championnat, joueur et club favori!
+<strong>Personnaliser votre Panel Football LiveScore en choississant votre championnat, joueur et club favori!</strong>
 ================================================================================
 <br>
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/admin3.png" width="1000" height="300"/></a>
