@@ -96,8 +96,8 @@ Back end: Api YouTube + FireBase(Push Notification) + NewsLetters + File Manager
 Ci-dessous comment intégrer des données analytics en deux vidéos:
 
 - YouTube Analytics: https://www.youtube.com/watch?v=ZdW62t0K_MU
-- Google Analytics: https://www.youtube.com/watch?v=ZdW62t0K_MU</strong>
-
+- Google Analytics: https://www.youtube.com/watch?v=xaDa4wFqTU8</strong>
+================================================================================
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/admin2-7.png" width="1000" height="300"/></a>
 </p>
 
