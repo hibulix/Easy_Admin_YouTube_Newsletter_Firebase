@@ -205,7 +205,7 @@ php bin/console fos:user:promote user ROLE_ADMIN (Afin de vous logger sur l'inte
 
 Page de login de l'admin interface ==> http://localhost/easyadmin-master/web/app_dev.php/login
 
-Page de front interface ==> http://localhost/easyadmin-master/web/app_dev.php/intro
+Page de front interface ==> http://localhost/easyadmin-master/web/app_dev.php/vertingo-website-introduction
 ```
 ================================================================================
 
@@ -325,7 +325,7 @@ php bin/console fos:user:promote user ROLE_ADMIN (Afin de vous logger sur l'inte
 
 Page de login de l'admin interface ==> https://platform-media.herokuapp.com/login
 
-Page de front interface ==> https://platform-media.herokuapp.com/intro
+Page de front interface ==> https://platform-media.herokuapp.com/vertingo-website-introduction
 ```
 ================================================================================
 <br>
@@ -357,8 +357,8 @@ Une fois la clé créé copier coller cette clé puis renseigné la dans le doss
 - analytics_codelab.js ligne 4
 
  Une fois la connexion via Google configuré logger vous sur votre Interface Admin afin de synchroniser votre compte avec YouTube
- et ensuite accédez à la page: https://votre_heroku_app.herokuapp.com/listplaylist?pseudo=votre_nom_d_utilisateur
- Voici l'exemple de ma page playlist automatiquement généré une fois loggé sur mon espace administrateur et la connexion établi via      YouTube Api V3: https://platform-media.herokuapp.com/listplaylist?pseudo=vertingo
+ et ensuite accédez à la page: https://votre_heroku_app.herokuapp.com/my-youtube-list-playlist?pseudo=votre_nom_d_utilisateur
+ Voici l'exemple de ma page playlist automatiquement généré une fois loggé sur mon espace administrateur et la connexion établi via      YouTube Api V3: https://platform-media.herokuapp.com/my-youtube-list-playlist?pseudo=vertingo
   
 <p align="center">
 Ci-dessous la page Playlist Youtube généré une fois synchronisé avec YouTube!
