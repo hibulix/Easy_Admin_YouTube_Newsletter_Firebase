@@ -244,6 +244,28 @@ UploadVideo.prototype.pollForVideoStatus = function() {
             </nav>
           </div>
         </header>
+        
+        {% if ACCESS_TOKEN_FROM_SERVICE_ACCOUNT %}
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Site Traffic <i>Sessions vs. Users - last 30 days</i></div>
+                    <div class="panel-body">
+                        <div id="chart-1-container" class="text-center"><img src="{{ asset('img/default.gif') }}" alt=""/></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Most Popular Demos/Tools <i>Pageviews - last 30 days</i></div>
+                    <div class="panel-body">
+                        <div id="chart-2-container" class="text-center"><img src="{{ asset('img/default.gif') }}" alt=""/></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
         <div class="row">
             <div class="col-md-6">
                 <div class="panel panel-default">
@@ -431,27 +453,7 @@ UploadVideo.prototype.pollForVideoStatus = function() {
           </div>
     </div>
     
-     {% if ACCESS_TOKEN_FROM_SERVICE_ACCOUNT %}
-        <div class="row">
-            <div class="col-md-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Site Traffic <i>Sessions vs. Users - last 30 days</i></div>
-                    <div class="panel-body">
-                        <div id="chart-1-container" class="text-center"><img src="{{ asset('img/default.gif') }}" alt=""/></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Most Popular Demos/Tools <i>Pageviews - last 30 days</i></div>
-                    <div class="panel-body">
-                        <div id="chart-2-container" class="text-center"><img src="{{ asset('img/default.gif') }}" alt=""/></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    {% endif %}
-
+   
             <div class="col-md-14">
               <div class="panel panel-default">
                 <div class="panel-heading">YouTube Videos</i></div>
