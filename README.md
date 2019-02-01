@@ -498,7 +498,12 @@ and also don't forget to activate the Analytics API in Google Cloud Console!
 - Synchronisation des vidéos et playlist de votre chaîne YouTube.
 - Synchronisation avec Google Cloud Messaging pour réception de notification push.
 
-<center>Ci-dessous illustration de la synchronisation avec l'application mobile TopsiteApp et réception de notification push!</center>
+<center>Ci-dessous illustration de la synchronisation avec l'application mobile TopsiteApp et réception de notification push!<br><br>
+Tester l'application Mobile avec l'email et le mot de passe suivant afin de visionner et récupérer le contenu VertinGo Website:
+<ul>
+    <li>Email: default_user@gmail.com</li>
+    <li>Mot de passe: default_user</li>
+</ul></center>
 <p align="center">
 <a href="https://www.youtube.com/channel/UC2g_-ipVjit6ZlACPWG4JvA?sub_confirmation=1"><img src="https://raw.githubusercontent.com/vertingo/Easy_Admin_YouTube_Newsletter_Firebase/master/web/assets/images/github/topsiteapp_demo.gif" width="1000" height="300"/></a>
 <br>
