@@ -657,7 +657,13 @@ $carousel='<script type="application/ld+json">
             'carousel' => $carousel
         ));
     }
-
+	
+    public function downloadandinstalllocallyAction()
+    {
+        return $this->render('VideoPlayerBundle:VideoPlayer:download-and-install-locally.html.twig', array(
+            
+        ));
+    }
 
     public function testimonialsAction()
     {
