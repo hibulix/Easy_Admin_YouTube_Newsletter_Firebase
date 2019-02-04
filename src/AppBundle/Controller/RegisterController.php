@@ -23,8 +23,8 @@ class RegisterController extends Controller
                $gcm_password = $_POST['gcm_password'];
     
           //    $gcm_token = $_GET['gcm_token'];
-          //    $gcm_email = 'admin@vertin-go.com';
-          //    $gcm_password = 'vertingo16';
+          //    $gcm_email = '';
+          //    $gcm_password = '';
 
             $repository_user_infos = $this->getDoctrine()->getRepository('AppBundle:User')->findOneBy(['email' => $gcm_email]);
             $repository_user_infos_count = $this->getDoctrine()->getRepository('AppBundle:User');
