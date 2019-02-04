@@ -101,7 +101,15 @@ how-to-integrate-youtube-data-analytics:
         sitemap:
             priority: 0.5
             changefreq: weekly 
-
+            
+download-and-install-locally:
+    path:     /download-and-install-locally
+    defaults: { _controller: VideoPlayerBundle:VideoPlayer:downloadandinstalllocally }
+    options:
+        sitemap:
+            priority: 0.5
+            changefreq: weekly
+            
 testimonials:
     path:     /testimonials
     defaults: { _controller: VideoPlayerBundle:VideoPlayer:testimonials }
