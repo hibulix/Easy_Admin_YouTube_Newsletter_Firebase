@@ -4,8 +4,6 @@
 
 {% block body %}
 
-
-
 <section class="menu cid-qpg357PDtf" id="menu2-3" data-rv-view="6775">
     <nav class="navbar navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm bg-color transparent">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,6 +44,7 @@
         </div>
     </div>    
 </section>
+
 
 {% set carousel_id = 0 %}
 {% for type, items in tab_playlist_video_id %}
@@ -133,9 +132,11 @@
     </section>
     <center><div class="fb-comments" data-href="https://platform-media.herokuapp.com/listplaylist?pseudo={{pseudo}}" data-width="956" data-numposts="100"></div></center>
     </section>
+    <hr style="background-color: rgb(94, 203, 255);">
     <br>
     {% set carousel_id = carousel_id + 1 %}
 {% endfor %}
+     
      
 
 <section class="cid-qtSYYg7FJl" id="image2-9n" data-rv-view="6780">
@@ -308,7 +309,7 @@
   <script src="{{ asset('assets/touch-swipe/jquery.touch-swipe.min.js') }}"></script>
   <script src="{{ asset('assets/theme/js/script.js') }}"></script>
   
-
+<div id="smart-banner-container"></div>
 {% endblock %}
 
 
