@@ -92,7 +92,7 @@
 						<table cellpadding='0' cellspacing='0' border='0' width='100%'>
 							<tr>
 								<td style='padding: 0 15px 0 0;'>
-									<img src='http://vertin-go.com/TopSite/Icon/pub_cible4.png' width='40' height='40' border='0' style='outline: none; text-decoration: none;
+									<img src="{{asset('assets/images/topsite/pub_cible4.png')}}" width='40' height='40' border='0' style='outline: none; text-decoration: none;
 										-ms-interpolation-mode: bicubic; display: block; border: none'/>
 								 </td>
 								 <td >
@@ -579,7 +579,7 @@ Tester l'application Mobile avec l'email et le mot de passe suivant afin de visi
 			<table width='760' cellspacing='0' align='center' cellpadding='0' border='0' class='content-wrap'>
 				<tr>
 					<td>
-						<a href='http://www.vertin-go.com/site/index.asp?DL=548982&page=525872' target='_blank'><img src='http://vertin-go.com/Bannieres/BanniereTopSite.png' width='760' height='100' border='0' class='image-fix responsive-img' style='outline: none; 
+						<a href='http://www.vertin-go.com/site/index.asp?DL=548982&page=525872' target='_blank'><img src="{{asset('assets/images/topsite/BanniereTopSite.png')}}"  width='760' height='100' border='0' class='image-fix responsive-img' style='outline: none; 
 							text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block;' /> </a>
 					</td>
 				</tr>
@@ -595,8 +595,6 @@ Tester l'application Mobile avec l'email et le mot de passe suivant afin de visi
 				</tr>
 			</table>
 			<!-- Seperator end -->
-
-	
 
 			<!-- Footer starts -->
 			<table width='760' cellspacing='0' align='center' cellpadding='0' border='0' bgcolor='#EE5242' class='content-wrap'>
@@ -647,7 +645,7 @@ Tester l'application Mobile avec l'email et le mot de passe suivant afin de visi
 											<tr>
 										<td>
 									
-										<a href='https://play.google.com/store/apps/details?id=com.vertin_go.myapplication&hl=fr' target='_blank'><img src='http://vertin-go.com/Bannieres/app-store-google-play.png' width='145' height='125'/> </a>
+										<a href='https://play.google.com/store/apps/details?id=com.vertin_go.myapplication&hl=fr' target='_blank'><img src="{{asset('assets/images/topsite/app-store-google-play.png')}}" width='145' height='125'/> </a>
 										</td>
 										</tr>
 									</table>
@@ -827,5 +825,5 @@ Tester l'application Mobile avec l'email et le mot de passe suivant afin de visi
   <script src="{{ asset('assets/touch-swipe/jquery.touch-swipe.min.js') }}"></script>
   <script src="{{ asset('assets/theme/js/script.js') }}"></script>
   
-
+<div id="smart-banner-container"></div>
 {% endblock %}
